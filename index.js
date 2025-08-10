@@ -5,3 +5,8 @@
       btn.classList.toggle("active");
       mobileMenu.classList.toggle("hidden");
     });
+
+    AOS.init({
+    duration: 1000, // animation duration
+    once: true      // run animation only once
+  });

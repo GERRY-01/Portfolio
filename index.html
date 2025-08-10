@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navbar Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black">
+
+  <nav class="bg-black text-white shadow-md">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <div class="text-orange-500 font-bold text-xl cursor-pointer select-none">
+        MyPortfolio
+      </div>
+
+      <!-- Hamburger -->
+      <button
+        id="menu-btn"
+        class="md:hidden flex flex-col justify-center items-center focus:outline-none hamburger"
+        aria-label="Toggle menu"
+      >
+        <span class="hamburger-line line1"></span>
+        <span class="hamburger-line line2"></span>
+        <span class="hamburger-line line3"></span>
+      </button>
+
+      <!-- Nav links -->
+      <ul
+        id="menu"
+        class="hidden md:flex md:space-x-8 text-white font-semibold"
+      >
+        <li><a href="#aboutme" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile menu -->
+    <ul
+      id="mobile-menu"
+      class="md:hidden bg-black px-4 py-3 space-y-3 font-semibold text-white hidden"
+    >
+      <li><a href="#aboutme" class="nav-link block">About Me</a></li>
+      <li><a href="#projects" class="nav-link block">Projects</a></li>
+      <li><a href="#education" class="nav-link block">Education</a></li>
+      <li><a href="#experience" class="nav-link block">Experience</a></li>
+      <li><a href="#cv" class="nav-link block">CV</a></li>
+      <li><a href="#contact" class="nav-link block">Contact</a></li>
+      <li><a href="#skills" class="nav-link block">Skills</a></li>
+      <li><a href="#socialmedia" class="nav-link block">Social Media</a></li>
+    </ul>
+  </nav>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
